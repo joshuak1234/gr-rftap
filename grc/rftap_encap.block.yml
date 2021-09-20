@@ -24,15 +24,8 @@ parameters:
     label: Type
     value: 0
     dtype: enum
-    option:
-      - id: 0
-        label: From PDU "dlt" key
-      - id: 1
-        label: From PDU "dissector" key
-      - id: 2
-        label: Custom DLT
-      - id: 3
-        label: Custom dissector
+    options: [0, 1, 2, 3]
+    option_labels: ['From PDU "dlt" key', 'From PDU "dissector" key', 'Custom DLT', 'Custom dissector']
   - id: custom_dlt
     label: Data Link Type
     value: -1
@@ -40,7 +33,6 @@ parameters:
   - id: custom_dissector_name
     label: Dissector
     type: string
-
 
 inputs:
 - label: in
