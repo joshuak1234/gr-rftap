@@ -4,7 +4,7 @@ category: '[RFtap]'
 
 templates:
   imports: import rftap
-  make: rftap.rftap_encap($encapsulation_from, $custom_dlt, $custom_dissector_name)
+  make: rftap.rftap_encap(${encapsulation_from}, ${custom_dlt}, ${custom_dissector_name})
 
 #  Make one 'parameters' list entry for every parameter you want settable from the GUI.
 #     Keys include:
