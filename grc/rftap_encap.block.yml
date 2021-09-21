@@ -22,13 +22,11 @@ templates:
 parameters:
   - id: encapsulation_from
     label: Type
-    value: 0
     dtype: enum
     options: [0, 1, 2, 3]
     option_labels: ['From PDU "dlt" key', 'From PDU "dissector" key', 'Custom DLT', 'Custom dissector']
   - id: custom_dlt
     label: Data Link Type
-    value: -1
     type: int
   - id: custom_dissector_name
     label: Dissector
